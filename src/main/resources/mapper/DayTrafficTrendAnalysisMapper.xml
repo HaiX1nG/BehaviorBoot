@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.DayTrafficTrendAnalysisDao">
+    <select id="getDayTrafficTrendAnalysis" resultType="com.example.bean.DayTrafficTrendAnalysis">
+        SELECT day, user_cnt, pv_cnt, fav_cnt, cart_cnt, buy_cnt
+        FROM day_traffic_trend_analysis
+        ORDER BY day ASC;
+    </select>
+</mapper>

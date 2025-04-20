@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.UserRetentionAnalysisDao">
+    <select id="getUserRetentionAnalysis" resultType="com.example.bean.UserRetentionAnalysis">
+        SELECT day, reten_1_rate, reten_3_rate, reten_5_rate FROM user_retention_analysis ORDER BY day ASC;
+    </select>
+</mapper>
