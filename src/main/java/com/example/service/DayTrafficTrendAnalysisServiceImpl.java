@@ -19,4 +19,13 @@ public class DayTrafficTrendAnalysisServiceImpl implements DayTrafficTrendAnalys
         }
         return dayTrafficTrendAnalyses;
     }
+
+    @Override
+    public Long getAllUser() {
+        Long allUser = dayTrafficTrendAnalysisDao.getAllUser();
+        if (allUser.equals("")) {
+            throw new RuntimeException("查询为空");
+        }
+        return allUser;
+    }
 }

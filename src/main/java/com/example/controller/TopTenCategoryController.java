@@ -21,4 +21,10 @@ public class TopTenCategoryController {
     public List<TopTenCategory> getTopTenCategory() {
         return topTenCategoryServiceI.getTopTenCategory();
     }
+
+    @RequestMapping("/buyAll")
+    @ResponseBody
+    public Long getBuyAll() {
+        return topTenCategoryServiceI.getBuyAll();
+    }
 }

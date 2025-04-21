@@ -11,4 +11,5 @@ import java.util.List;
 @Mapper
 public interface DayTrafficTrendAnalysisDao {
     List<DayTrafficTrendAnalysis> getDayTrafficTrendAnalysis();
+    Long getAllUser();
 }

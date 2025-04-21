@@ -10,4 +10,5 @@ import java.util.List;
 @Mapper
 public interface TopTenCategoryDao {
     List<TopTenCategory> getTopTenCategory();
+    Long getBuyAll();
 }

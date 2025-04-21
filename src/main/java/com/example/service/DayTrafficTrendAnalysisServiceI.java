@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface DayTrafficTrendAnalysisServiceI {
     List<DayTrafficTrendAnalysis> getDayTrafficTrendAnalysis();
+    Long getAllUser();
 }

@@ -11,11 +11,21 @@ import java.util.List;
 public class TopTenCategoryServiceImpl implements TopTenCategoryServiceI {
     @Autowired
     private TopTenCategoryDao topTenCategoryDao;
+    @Override
     public List<TopTenCategory> getTopTenCategory() {
         List<TopTenCategory> topTenCategoryList = topTenCategoryDao.getTopTenCategory();
         if (topTenCategoryList == null || topTenCategoryList.size() == 0) {
             throw new RuntimeException("查询为空");
         }
         return topTenCategoryList;
+    }
+
+    @Override
+    public Long getBuyAll() {
+        Long buyAll = topTenCategoryDao.getBuyAll();
+        if (buyAll.equals("")) {
+            throw new RuntimeException("查询为空");
+        }
+        return buyAll;
     }
 }

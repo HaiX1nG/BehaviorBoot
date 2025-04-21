@@ -8,4 +8,7 @@
         FROM day_traffic_trend_analysis
         ORDER BY day ASC;
     </select>
+    <select id="getAllUser" resultType="Long">
+        SELECT SUM(user_cnt) as user_cnt FROM day_traffic_trend_analysis;
+    </select>
 </mapper>

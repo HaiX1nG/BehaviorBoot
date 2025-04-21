@@ -6,4 +6,7 @@
     <select id="getTopTenCategory" resultType="com.example.bean.TopTenCategory">
         SELECT category_id, cnt FROM top10_category ORDER BY cnt DESC;
     </select>
+    <select id="getBuyAll" resultType="Long">
+        SELECT SUM(cnt) as buy_cnt FROM top10_category;
+    </select>
 </mapper>

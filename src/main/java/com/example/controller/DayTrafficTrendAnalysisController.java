@@ -21,4 +21,10 @@ public class DayTrafficTrendAnalysisController {
     public List<DayTrafficTrendAnalysis> getDayTrafficTrendAnalysis() {
         return dayTrafficTrendAnalysisServiceI.getDayTrafficTrendAnalysis();
     }
+
+    @RequestMapping("/allUser")
+    @ResponseBody
+    public Long getAllUser() {
+        return dayTrafficTrendAnalysisServiceI.getAllUser();
+    }
 }
