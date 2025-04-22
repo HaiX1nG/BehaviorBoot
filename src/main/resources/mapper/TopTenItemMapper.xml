@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.dao.TopTenItemDao">
     <select id="getTopTenItem" resultType="com.example.bean.TopTenItem">
-        SELECT item_id, cnt FROM top10_item ORDER BY cnt DESC;
+        SELECT item_id, cnt FROM top10_item ORDER BY cnt ASC;
     </select>
 </mapper>
